@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>card</title>
+
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <style>
+      input[type="text"],
+      input[type="number"],
+       .value {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 2px solid #ccc;
+        box-sizing: border-box;
+      }
+
+      a {
+        color: white;
+      }
+      body {
+        background-image: url("img/w.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 750px;
+      }
+
+      .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+      .form {
+        padding-top: 5em;
+      }
+      label{
+          color:rgb(16, 6, 36);
+        }
+        a{
+            color: rgb(32, 17, 17);
+        }
+    
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Parker Movie Expo</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html"
+                >Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+          <a class="my-1 btn btn-primary mx-1" href="log_in.html">Login</a>
+          <a class="my-1 btn btn-primary mx-1" href="sign_up.html">Sign Up</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container form">
+      <div class="row">
+        <div class="col-2">
+
+        </div>
+        <div class="col-8">
+                <form action="#" onsubmit="return Signup()">
+                        <div class="container">
+                          <label><b>Bank Name</b></label>
+                          <select class="value" required>
+                            <option value="1">Select</option>
+                            <option value="2">Canara Bank</option>
+                            <option value="3">Bank Of India</option>
+                            <option value="4">Indian Bank</option>
+                            <option value="5">TMB</option>
+                            <option value="6">IOB</option> </select
+                          ><br />
+                          <label><b>Branch Name</b></label>
+                          <select class="value" required>
+                            <option value="1">Select</option>
+                            <option value="2">Taramani</option>
+                            <option value="3">Thiruvanmiyur</option>
+                            <option value="4">Adyar</option>
+                            <option value="5">Besant Nagar</option>
+                            <option value="6">Perungudi</option>
+                            <option value="7">chromepet</option>
+                            <option value="8">Kandanchavadi</option>
+                            <option value="9">Vadapalani</option>
+                             </select><br />
+                             <label><b>Name</b></label>
+                             <input type="text" placeholder="Enter Name" name="username"
+                               required/><br/>
+                               <label><b>Card Number</b></label> 
+                               <input type="number" placeholder="Enter Card Number" id="number" required/> 
+                               <br/>
+                               <label><b>CVV</b></label> 
+                               <input type="number" placeholder="Enter CVV" id="number" required/> <br/>
+                               <label><b>Expiration Month</b></label>
+                               <select class="value" required>
+                                 <option value="1">Select</option>
+                                 <option value="2">January</option>
+                                 <option value="3">February</option>
+                                 <option value="4">March</option>
+                                 <option value="5">April</option>
+                                 <option value="6">May</option> 
+                                 <option value="7">June</option>
+                                 <option value="8">July</option>
+                                 <option value="9">August</option>
+                                 <option value="10">September</option>
+                                <option value="11">October</option>
+                                <option value="12">November</option>
+                                <option value="13">December</option>
+                         </select><br/>
+                         <label><b>Expiration Year</b></label>
+                         <select class="value" required>
+                           <option value="1">Select</option>
+                           <option value="2">2019</option>
+                           <option value="3">2020</option>
+                           <option value="4">2021</option>
+                           <option value="5">2022</option>
+                           <option value="6">2023</option> 
+                           <option value="7">2024</option>
+                           <option value="8">2025</option>
+                           
+                   </select><br/>
+                               <button type="submit" class="btn btn-primary">Submit</button>
+
+                        </div>
+                        </form>
+        </div>
+        <div class="col-2">
+
+        </div>
+          </div>
+          </div>
+          <script>
+          function Signup()
+          {
+              alert("Your ticket was booked successfully");
+              return true;
+          }
+         
+          </script>
+
+  </body>
+</html>

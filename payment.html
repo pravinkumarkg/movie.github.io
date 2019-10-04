@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>payment</title>
+
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <style>
+      .value {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 2px solid #ccc;
+        box-sizing: border-box;
+      }
+
+      a {
+        color: white;
+      }
+      body {
+        background-image: url("img/w.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 1000px;
+      }
+
+      .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+      .form {
+        padding-top: 4em;
+      }
+      label{
+          color:rgb(16, 6, 36);
+        }
+        a{
+            color: rgb(32, 17, 17);
+        }
+    
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Parker Movie Expo</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html"
+                >Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+          <a class="my-1 btn btn-primary mx-1" href="log_in.html">Login</a>
+          <a class="my-1 btn btn-primary mx-1" href="sign_up.html">Sign Up</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container form">
+      <div class="row">
+        <div class="col-2">
+
+        </div>
+        <div class="col-8">
+                <form action="#">
+                        <div class="container">
+                          <label><b>Show Timings</b></label>
+                          <select class="value" required>
+                            <option value="1">Select</option>
+                            <option value="2">9:00 AM</option>
+                            <option value="3">12:00 PM</option>
+                            <option value="4">3:00 PM</option>
+                            <option value="5">6:00 PM</option>
+                            <option value="6">9:00 PM</option> </select
+                          ><br />
+                          <label><b>Number Of Seats</b></label>
+                          <select class="value" required>
+                            <option value="1">Select</option>
+                            <option value="2">1</option>
+                            <option value="3">2</option>
+                            <option value="4">3</option>
+                            <option value="5">4</option>
+                            <option value="6">5</option>
+                            <option value="7">6</option>
+                            <option value="8">7</option>
+                            <option value="9">8</option>
+                            <option value="10">9</option>
+                            <option value="11">10</option> </select
+                          ><br />
+                          <label><b>Payment Type</b></label><br />
+                          <i class="fa fa-credit-card" aria-hidden="true"></i> <a href="card.html">Debit Card</a> &nbsp;&nbsp;
+                          <i class="fa fa-credit-card" aria-hidden="true"></i> <a href="card.html">Credit Card</a>&nbsp;&nbsp;
+                          <i class="fa fa-google-wallet"></i><a href="wallet.html">Wallet</a>&nbsp;&nbsp;
+                        </div>
+                        </form>
+        </div>
+        <div class="col-2">
+
+        </div>
+          </div>
+          </div>
+
+  </body>
+</html>
